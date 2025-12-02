@@ -21,9 +21,15 @@
 
 /* custom variables */
 :root {
-    --slate300: hsl(212, 45%, 89%);
-    --slate500: hsl(216, 15%, 48%);
-    --slate900: hsl(218, 44%, 22%); 
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --border-radius-normal: 1.25rem;
 }
 
 /* css reset */
@@ -35,4 +41,61 @@
 
 img {
     width: 100%;
+    border-radius: var(--border-radius-normal);
+    margin-bottom: 2rem;
 }
+
+html {
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--slate-300);
+}
+
+p {
+    font-family: "Outfit", "san-serif";
+    font-size: var(--font-size-medium);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.qr-frontendmentor-home {
+    width: 24rem;
+    height: 38rem;
+    background-color: var(--white);
+    padding: 1rem 1rem 2.5rem 1rem;
+    border-radius: var(--border-radius-normal);
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.50); 
+}
+
+    .qr-frontendmentor-home:hover {
+        transform: scale(1.03);
+}
+
+.text {
+    padding: 0 1.2rem;
+}
+
+    .text p:nth-child(1) {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-large);
+        color: var(--slate-900)
+    }
+
+    .text p:nth-child(2) {
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-medium);
+        color: var(--slate-500);
+        padding: 1.3rem;
+    }   
+
+
+ 
+
