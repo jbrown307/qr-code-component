@@ -42,11 +42,11 @@
 img {
     width: 100%;
     border-radius: var(--border-radius-normal);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 html {
-    font-size: 100%;
+    font-size: 50%;
 }
 
 body {
@@ -68,7 +68,7 @@ p {
     width: 24rem;
     height: 38rem;
     background-color: var(--white);
-    padding: 1rem 1rem 2.5rem 1rem;
+    padding: 1rem;
     border-radius: var(--border-radius-normal);
     transition: transform 0.3s ease;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.50);
@@ -93,8 +93,18 @@ p {
         font-weight: var(--font-weight-regular);
         font-size: var(--font-size-medium);
         color: var(--slate-500);
-        padding: 1.3rem;
-    }   
+    }
+
+/* desktop (1440px) */
+@media (min-width: 1440px) {
+    html {
+        font-size: 100%;
+    }
+
+    .text p:nth-child(2) {
+        padding: 2rem;
+    }
+}
 
 
  
