@@ -1,0 +1,104 @@
+/* local fonts imported from google-fonts-web-helper */
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/outfit-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('assets/outfit-v15-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/outfit-v15-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('assets/outfit-v15-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* custom variables */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --border-radius-normal: 1.25rem;
+}
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    border-radius: var(--border-radius-normal);
+    margin-bottom: 1rem;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--slate-300);
+}
+
+p {
+    font-family: "Outfit", "san-serif";
+    font-size: var(--font-size-medium);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.qr-frontendmentor-home {
+    width: 24rem;
+    height: 38rem;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: var(--border-radius-normal);
+}
+
+.text {
+    padding: 0 1.2rem;
+}
+
+    .text p:nth-child(1) {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-large);
+        color: var(--slate-900)
+    }
+
+    .text p:nth-child(2) {
+        font-weight: var(--font-weight-regular);
+        font-size: var(--font-size-medium);
+        color: var(--slate-500);
+    }
+
+/* desktop (1440px) */
+@media (min-width: 1440px) {
+    html {
+        font-size: 100%;
+    }
+
+    .text p:nth-child(2) {
+        padding: 2rem;
+    }
+}
+
+
+ 
+
