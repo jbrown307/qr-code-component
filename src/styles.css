@@ -70,13 +70,6 @@ p {
     background-color: var(--white);
     padding: 1rem;
     border-radius: var(--border-radius-normal);
-    transition: transform 0.3s ease;
-    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.50);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.50); 
-}
-
-    .qr-frontendmentor-home:hover {
-        transform: scale(1.03);
 }
 
 .text {
