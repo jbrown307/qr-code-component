@@ -19,9 +19,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 **Mobile Design**
+<br>
 ![](./qr-code-component-desktop-mobile.png)
 
 **Desktop Design**
+<br>
 ![](./qr-code-component-desktop-desktop.png)
 
 ### Links
@@ -41,6 +43,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### What I learned
 
 **Buliding Screen-Reader Friendy QR Codes**
+<br>
 I wanted to ensure accessibility and inclusivity in my project. I learned that most screen readers cannot scan QR codes. To address this, I wrapped the QR code image in an anchor tag linking to Frontend Mentor's homepage and added an alt attribute that clearly describes the QR code's function.
 
 ```html
@@ -50,6 +53,7 @@ I wanted to ensure accessibility and inclusivity in my project. I learned that m
 ```
 
 **Combining Different Types of CSS Selectors**
+<br>
 I was able to reduce the number of classes in the HTML by combining multiple types of selectors. For example, to style two paragraph elements, I used a compound selector combining class, descendant, and pseudo selectors:
 
 ```css
@@ -67,6 +71,7 @@ I was able to reduce the number of classes in the HTML by combining multiple typ
 ```
 
 **Exploring Different Image Formats**
+<br>
 Initially, I considered reducing the file size of the QR code image to improve performance. However, I realized it’s best to maintain high image quality for QR codes to ensure reliable scanning.
 
 I explored converting the QR code to modern formats like WebP or AVIF, which offer a good balance of file size and quality. However, older browsers may not support these formats, so I implemented a solution using WebP for modern browsers and PNG as a fallback.
