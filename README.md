@@ -45,17 +45,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 **Buliding Screen-Reader Friendy QR Codes**
 <br>
 I wanted to ensure accessibility and inclusivity in my project. I learned that most screen readers cannot scan QR codes. To address this, I wrapped the QR code image in an anchor tag linking to Frontend Mentor's homepage and added an alt attribute that clearly describes the QR code's function.
-
+<br>
 ```html
 <a href="https://www.frontendmentor.io/" target="_blank">
   <img src="assets/image-qr-code.png" alt="QR code that links to Frontend Mentor's website.">
 </a>
 ```
-
+<br>
 **Combining Different Types of CSS Selectors**
 <br>
 I was able to reduce the number of classes in the HTML by combining multiple types of selectors. For example, to style two paragraph elements, I used a compound selector combining class, descendant, and pseudo selectors:
-
+<br>
 ```css
 .text-container p:nth-child(1) {
   font-weight: var(--font-weight-bold);
@@ -69,7 +69,7 @@ I was able to reduce the number of classes in the HTML by combining multiple typ
   color: var(--slate-500);
 }
 ```
-
+<br>
 **Exploring Different Image Formats**
 <br>
 Initially, I considered reducing the file size of the QR code image to improve performance. However, I realized it’s best to maintain high image quality for QR codes to ensure reliable scanning.
@@ -77,7 +77,7 @@ Initially, I considered reducing the file size of the QR code image to improve p
 I explored converting the QR code to modern formats like WebP or AVIF, which offer a good balance of file size and quality. However, older browsers may not support these formats, so I implemented a solution using WebP for modern browsers and PNG as a fallback.
 
 I also learned that the alt attribute only works on the fallback <img> element, not the <source> element.
-
+<br>
 ```html
 <picture>
   <a href="https://www.frontendmentor.io/" target="_blank">
@@ -88,7 +88,7 @@ I also learned that the alt attribute only works on the fallback <img> element, 
   </a>
 </picture>
 ```
-
+<br>
 ### Continued development
 During development, I noticed that my QR code component didn’t scale well on very small screens. I solved this by reducing the HTML element's font size to 50% and using a media query to restore it to 100% on larger screens (min-width: 1440px).
 
