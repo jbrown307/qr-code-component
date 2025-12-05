@@ -11,7 +11,6 @@
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -34,14 +33,20 @@
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+**QR codes**
+- Screen readers aren't able to scan QR codes. In order to solve this accessibility problem, I simply wrapped the QR code image in an achor tag that links to Frontend Mentor's home page.
+
+- I was going to convert the QR code image into WebP in order to reduce its size while maintaining its visual quailty    
 
 To see how you can add code snippets, see below:
 
 ```html
-<a href="https://www.frontendmentor.io/" target="_blank">
+<picture>
+  <a href="https://www.frontendmentor.io/" target="_blank">
+  <source srcset="assets/image-qr-code.webp" type="image/webp">
   <img src="assets/image-qr-code.png" alt="QR code that links to frontend mentor's website.">
-</a>
+  </a>
+</picture>
 ```
 ```css
 .text p:nth-child(1) {
@@ -65,16 +70,12 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [google-webfonts-helper](https://gwfh.mranftl.com/fonts) - This website allowed
+me to self-host a Google font called "Outfit." This website hosts  
+- [squoosh](https://squoosh.app/editor) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
 - LinkedIn - [Jordan Brown](https://www.linkedin.com/in/jordanbrownca/)
 - Frontend Mentor - [@jbrown307](https://www.frontendmentor.io/home)
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
