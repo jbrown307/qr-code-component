@@ -51,6 +51,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -72,17 +73,17 @@ p {
     border-radius: var(--border-radius-normal);
 }
 
-.text {
+.text-container {
     padding: 0 1.2rem;
 }
 
-    .text p:nth-child(1) {
+    .text-container p:nth-child(1) {
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-large);
         color: var(--slate-900)
     }
 
-    .text p:nth-child(2) {
+    .text-container p:nth-child(2) {
         font-weight: var(--font-weight-regular);
         font-size: var(--font-size-medium);
         color: var(--slate-500);
