@@ -19,15 +19,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 **Mobile Design**
+<br>
 ![](./qr-code-component-mobile-screenshot.jpg)
 
 **Desktop Design**
+<br>
 ![](./qr-code-component-desktop-screenshot.jpg)
 
 ### Links
 
-- [Source Code](https://github.com/jbrown307/qr-code-component/tree/main/docs){target="_blank"}
-- [Live Site](https://jbrown307.github.io/qr-code-component/){target="_blank"}
+- [Source Code](https://github.com/jbrown307/qr-code-component/tree/main/docs)
+- [Live Site](https://jbrown307.github.io/qr-code-component/)
 
 ## My process
 
