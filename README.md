@@ -16,6 +16,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
+The production-ready website files are located in the `docs/` directory.
+
 ### Screenshot
 
 **Mobile Design**
@@ -76,7 +78,7 @@ Initially, I considered reducing the file size of the QR code image to improve p
 
 I explored converting the QR code to modern formats like WebP or AVIF, which offer a good balance of file size and quality. However, older browsers may not support these formats, so I implemented a solution using WebP for modern browsers and PNG as a fallback.
 
-However, I also learned that the alt attribute only works on the fallback <img> element, not the <source> element. For this reason, I decided to remove the fallback solution due to accessibility concerns.
+However, I also learned that the alt attribute only works on the fallback img element, not the source element. For this reason, I decided to remove the fallback solution due to accessibility concerns.
 
 ```html
 <picture>
