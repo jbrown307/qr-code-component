@@ -19,15 +19,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 **Mobile Design**
-![](,/qr-code-component-mobile-screenshot.jpg)
+![](./qr-code-component-mobile-screenshot.jpg)
 
 **Desktop Design**
 ![](./qr-code-component-desktop-screenshot.jpg)
 
 ### Links
 
-- [Source Code](https://github.com/jbrown307/qr-code-component/tree/main/docs)
-- [Live Site](https://jbrown307.github.io/qr-code-component/)
+- [Source Code](https://github.com/jbrown307/qr-code-component/tree/main/docs){target="_blank"}
+- [Live Site](https://jbrown307.github.io/qr-code-component/){target="_blank"}
 
 ## My process
 
@@ -74,7 +74,7 @@ Initially, I considered reducing the file size of the QR code image to improve p
 
 I explored converting the QR code to modern formats like WebP or AVIF, which offer a good balance of file size and quality. However, older browsers may not support these formats, so I implemented a solution using WebP for modern browsers and PNG as a fallback.
 
-I also learned that the alt attribute only works on the fallback <img> element, not the <source> element.
+However, I also learned that the alt attribute only works on the fallback <img> element, not the <source> element. For this reason, I decided to remove the fallback solution due to accessibility concerns.
 
 ```html
 <picture>
@@ -96,6 +96,7 @@ This approach effectively halved the component size on small and medium screens 
 
 - [google-web-fonts-helper](https://gwfh.mranftl.com/fonts) - "A Hassle-Free Way to Self-Host Google Fonts"
 - [Squoosh](https://squoosh.app/) - "Squoosh is an image compression web app that reduces image sizes through numerous formats."
+- [Markup Validator](https://validator.w3.org/) - "The Markup Validator is a free tool and service that validates markup: in other words, it checks the syntax of Web documents, written in formats such as (X)HTML."
 
 ## Author
 
