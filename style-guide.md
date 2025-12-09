@@ -24,7 +24,7 @@ The designs were created to the following widths:
 - Font size (paragraph): 15px
 
 ## Attribution Copy
-- font-size: 11px; text-align: center; }
+- font-size: 11px; text-align: center;
 - a { color: hsl(228, 45%, 44%); }
 
 ### Font
