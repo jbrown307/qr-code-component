@@ -25,8 +25,10 @@
     --slate-300: hsl(212, 45%, 89%);
     --slate-500: hsl(216, 15%, 48%);
     --slate-900: hsl(218, 44%, 22%);
+    --attribution-anchor: hsl(228, 45%, 44%);
     --font-size-large: 1.5rem;
     --font-size-medium: 1rem;
+    --font-size-small: 0.5rem;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     --border-radius-normal: 1.25rem;
@@ -60,14 +62,33 @@ body {
 
 p {
     font-family: "Outfit", "san-serif";
-    font-size: var(--font-size-medium);
     text-align: center;
     margin-bottom: 0.75rem;
 }
 
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 2rem;
+    text-align: center;
+}
+
+    footer p {
+        display: inline-block;
+        text-align: center;
+        font-size: var(--font-size-small);
+    }
+
+    footer a {
+        color: var(--attribution-anchor);
+        text-decoration: none;
+    }
+
+
 .qr-frontendmentor-home {
     width: 24rem;
-    height: 38rem;
+    height: 39rem;
     background-color: var(--white);
     padding: 1rem;
     border-radius: var(--border-radius-normal);
@@ -80,7 +101,7 @@ p {
     .text-container p:nth-child(1) {
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-large);
-        color: var(--slate-900)
+        color: var(--slate-900);
     }
 
     .text-container p:nth-child(2) {
@@ -95,8 +116,12 @@ p {
         font-size: 100%;
     }
 
-    .text p:nth-child(2) {
-        padding: 2rem;
+    .qr-frontendmentor-home {
+        height: 36rem;
+    }
+
+    .text-container p:nth-child(2) {
+        padding: 1rem;
     }
 }
 
