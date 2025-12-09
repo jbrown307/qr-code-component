@@ -78,7 +78,6 @@ footer {
 
     footer a {
         color: var(--attribution-anchor);
-        text-decoration: none;
     }
 
 
@@ -88,7 +87,7 @@ footer {
     background-color: var(--white);
     padding: 0.75rem;
     border-radius: var(--border-radius-normal);
-    /*fallack box-shadow property for old browsers*/
+    /*fallack box-shadow property for older browsers*/
     -webkit-box-shadow: 2px 9px 15px 1px rgba(0,0,0,0.12); 
     box-shadow: 2px 9px 15px 1px rgba(0,0,0,0.12);
 }

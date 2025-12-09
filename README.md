@@ -100,6 +100,7 @@ This approach effectively halved the component size on small and medium screens 
 
 - [google-web-fonts-helper](https://gwfh.mranftl.com/fonts) - "A Hassle-Free Way to Self-Host Google Fonts"
 - [Squoosh](https://squoosh.app/) - "Squoosh is an image compression web app that reduces image sizes through numerous formats."
+- [Box-Shadow CSS Generator](https://html-css-js.com/css/generator/box-shadow/) - "Use the sliders and the color picker to set the values and watch the live preview until you reach the desired effect."
 - [Markup Validator](https://validator.w3.org/) - "The Markup Validator is a free tool and service that validates markup: in other words, it checks the syntax of Web documents, written in formats such as (X)HTML."
 
 ## Author
