@@ -108,7 +108,7 @@ footer {
         color: var(--slate-500);
     }
 
-/* desktop (1440px) */
+/* desktop (min 1440px) */
 @media (min-width: 1440px) {
 
     .qr-frontendmentor-home {

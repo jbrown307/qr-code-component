@@ -92,9 +92,13 @@ However, I also learned that the `alt` attribute only works on the fallback `img
 ```
 
 ### Continued development
-During development, I noticed that my QR code component didn’t scale well on very small screens. I solved this by reducing the HTML element's font size to 50% and using a media query to restore it to 100% on larger screens (min-width: 1440px).
+During development, I noticed that my QR code component didn’t scale well on very small screens. Initially, I tried to fix this by reducing the HTML element’s font size to 50%, then using a media query to restore it to 100% on larger screens (min-width: 1440px). The idea was to effectively halve the component’s size on small and medium screens and return it to full size on larger ones.
 
-This approach effectively halved the component size on small and medium screens and restored it on larger screens. While this was a quick and practical solution, I plan to continue refining a mobile-first approach and improving my skills in creating fully responsive applications.
+However, adjusting the HTML element’s font size turned out to be the wrong approach. It caused my defined font sizes to fall below the browser’s minimum allowed font size. As a result, all text, regardless of my small, medium, or large font size definitions, rendered at the same minimum size.
+
+I resolved the issue by restoring the HTML element’s font size to 100% and instead reduced the width, height, and font sizes of the QR code component itself. This makes the component appear smaller on mobile devices. I also added a new media query that doubles the component’s width, height, and font sizes on larger screens, ensuring it scales up appropriately.
+
+While this was a quick and practical solution, I plan to continue refining a mobile-first approach and improving my skills in creating fully responsive applications.
 
 ### Useful resources
 
@@ -108,4 +112,8 @@ This approach effectively halved the component size on small and medium screens 
 - GitHub - [jbrown307](https://github.com/jbrown307)
 - Frontend Mentor - [@jbrown307](https://www.frontendmentor.io/profile/jbrown307)
 - LinkedIn - [Jordan Brown](https://www.linkedin.com/in/jordanbrownca/)
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
