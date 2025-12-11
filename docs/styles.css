@@ -32,6 +32,7 @@
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     --border-radius-normal: 1.50rem;
+    --box-shadow: 2px 9px 15px 1px rgba(0,0,0,0.12);
 }
 
 /* css reset */
@@ -47,39 +48,6 @@ img {
     margin-bottom: 1rem;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--slate-300);
-}
-
-p {
-    font-family: "Outfit", "sans-serif";
-    text-align: center;
-    margin-bottom: 0.75rem;
-}
-
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin: 1rem;
-    text-align: center;
-}
-
-    footer p {
-        display: inline-block;
-        text-align: center;
-        font-size: var(--font-size-small);
-    }
-
-    footer a {
-        color: var(--attribution-anchor);
-    }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -92,15 +60,46 @@ footer {
   border: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--slate-300);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer p {
+    display: inline-block;
+    text-align: center;
+    font-size: var(--font-size-small);
+}
+
+footer a {
+    color: var(--attribution-anchor);
+}
+
 .qr-frontendmentor-home {
     width: 18rem;
     height: 28rem;
     background-color: var(--white);
     padding: 0.75rem;
     border-radius: var(--border-radius-normal);
-    /*fallack box-shadow property for older browsers*/
-    -webkit-box-shadow: 2px 9px 15px 1px rgba(0,0,0,0.12); 
-    box-shadow: 2px 9px 15px 1px rgba(0,0,0,0.12);
+    box-shadow: var(--box-shadow);
 }
 
 .text-container {
@@ -121,6 +120,9 @@ footer {
 
 /* desktop (min-width 1440px) */
 @media (min-width: 90rem) {
+    footer p {
+        font-size: 1rem;
+    }
 
     .qr-frontendmentor-home {
         width: 36rem;
@@ -134,9 +136,5 @@ footer {
 
     .text-container p:nth-child(2) {
         font-size: 1.75rem;
-    }
-
-    footer p {
-        font-size: 1rem;
     }
 }
