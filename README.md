@@ -19,8 +19,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 The production-ready website files are located in the `docs/` directory.
 
 ### Screenshot
-<br>
-![](qr-code-component-desktop-screenshot.jpg)
+
+![QR Code Component Screenshot](./qr-code-component-project-screenshot.jpg)
 
 ### Links
 
