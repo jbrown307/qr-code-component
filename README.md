@@ -20,11 +20,6 @@ The production-ready website files are located in the `docs/` directory.
 
 ### Screenshot
 
-**Mobile Design**
-<br>
-![](./qr-code-component-mobile-screenshot.jpg)
-
-**Desktop Design**
 <br>
 ![](./qr-code-component-desktop-screenshot.jpg)
 
