@@ -76,26 +76,6 @@ p {
   text-align: center;
 }
 
-footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  margin: 1rem;  /* Fallback (older browsers) */
-  margin-inline: 1rem;
-  margin-block: 1rem;
-  text-align: center;
-}
-
-  footer p {
-    display: inline-block;
-    text-align: center;
-    font-size: var(--font-size-small);
-  }
-
-  footer a {
-    color: var(--attribution-anchor);
-  }
-
 .qr-frontendmentor-home {
   width: 18rem; /* Fallback (older browsers) */
   height: 28rem; /* Fallback (older browsers) */
